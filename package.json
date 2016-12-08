@@ -1,0 +1,39 @@
+{
+  "name": "podcasts-listener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*",
+    "lint": "xo --env=node --env=mocha",
+    "lint:fix": "xo --env=node --env=mocha --fix",
+    "create": "claudia create --region us-east-1 --handler index.podcasts",
+    "update": "claudia update",
+    "destroy": "claudia destroy && rm claudia.json"
+  },
+  "author": "Alessio Coser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlessioCoser/sanbaradio_podcasts.git"
+  },
+  "keywords": [
+    "podcasts",
+    "sanbaradio",
+    "claudiajs"
+  ],
+  "homepage": "https://github.com/AlessioCoser/sanbaradio_podcasts#readme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlessioCoser/sanbaradio_podcasts/issues"
+  },
+  "dependencies": {
+    "claudia": "^2.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": true
+  }
+}
