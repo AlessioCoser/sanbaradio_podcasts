@@ -12,6 +12,8 @@ This is a simple feed podcast listener made with claudiajs and claudia-bot-build
 npm install
 ```
 
+Add S3FullAccess Permission to your lambda executor
+
 ### Create the lambda
 
 ```
@@ -28,4 +30,11 @@ npm run update [-- --profile your-aws-profile]
 
 ```
 npm run destroy [-- --profile your-aws-profile]
+```
+
+## Add a scheduled event
+https://github.com/claudiajs/claudia/blob/master/docs/add-scheduled-event.md
+
+```
+claudia add-scheduled-event --event event.json --name sync-sanba-pods
 ```
