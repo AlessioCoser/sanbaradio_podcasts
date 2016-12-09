@@ -10,7 +10,8 @@
     "lint": "xo --env=node --env=mocha",
     "lint:fix": "xo --env=node --env=mocha --fix",
     "create": "claudia create --timeout 300 --region us-east-1 --handler index.podcasts",
-    "update": "claudia update",
+    "update": "claudia update --timeout 300",
+    "add-schedule": "claudia add-scheduled-event --event event.json --name sync-sanba-pods --schedule 'cron(15 1 * * ? *)'",
     "destroy": "claudia destroy && rm claudia.json"
   },
   "author": "Alessio Coser",
@@ -29,8 +30,10 @@
     "url": "https://github.com/AlessioCoser/sanbaradio_podcasts/issues"
   },
   "dependencies": {
+    "aws-sdk": "^2.6.6",
     "claudia": "^2.1.1",
-    "rss-to-json": "^1.0.2"
+    "rss-to-json": "^1.0.2",
+    "string-to-stream": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "^3.2.0"
