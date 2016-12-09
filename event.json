@@ -1,0 +1,9 @@
+{
+   "Records":[
+      {
+         "eventVersion":"2.0",
+         "awsRegion":"us-east-1",
+         "eventName":"sync-sanba-pods"
+      }
+   ]
+}
