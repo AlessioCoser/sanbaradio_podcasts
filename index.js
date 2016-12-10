@@ -10,8 +10,7 @@ exports.podcasts = function (event, context) {
   var s3FileSystem = new S3FileSystem()
 
   return rssService.toJson()
-  .then(podcastUtils.jsonToPods)
-  .then(podcastUtils.podsToJson)
+  .then(podcastUtils.parseJson)
   .then((json) => {
     var stream = stringToStream(JSON.stringify(json))
     return s3FileSystem.writeAsStream(folder, fileName, stream)

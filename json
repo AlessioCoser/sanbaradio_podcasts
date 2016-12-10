@@ -1,0 +1,40 @@
+{
+  "rss": {
+    "channel": {
+      "description": {},
+      "item": [
+        {
+          "category": [
+            {
+              "$t": "#sapevatelo",
+              "domain": "http://www.sanbaradio.it/category/argomento/sapevatelo"
+            }
+          ],
+          "comments": "http://www.sanbaradio.it/content/la-germania-chiama-sanba-01x10#comments",
+          "description": "<div class=\"field field-type-text field-field-abstract\">\n    <div class=\"field-items\">\n            <div class=\"field-item odd\">\n                    In diretta da Mannheim e da Dresda parliamo della vittoria del Referendum Costituzionale, di van der Bellen in Austria e delle parole italiane nel cibo tedesco!        </div>\n        </div>\n</div>\n<div class=\"field field-type-content-taxonomy-term-list field-field-taxpod\">\n    <div class=\"field-items\">\n            <div class=\"field-item odd\">\n                      <div class=\"field-label-inline-first\">\n              Podcast:&nbsp;</div>\n                    <span>La Germania Chiama Sanba</span>        </div>\n        </div>\n</div>\n<div class=\"field field-type-filefield field-field-frontimm\">\n    <div class=\"field-items\">\n            <div class=\"field-item odd\">\n                    <img  class=\"imagefield imagefield-field_frontimm\" width=\"1140\" height=\"636\" alt=\"\" src=\"http://www.sanbaradio.it/files/GermaniaChiamaSanba_8.jpg?1481320884\" />        </div>\n        </div>\n</div>\n<p>Decima puntata di La Germania chiama Sanba! Oggi abbiamo parlato della reazione tedesca alla vittoria dei NO al Referendum Costituzionale, della vittoria del verde Alexander van der Bellen alle Presidenziali austriache e delle parole italiane usate nei nomi del cibo tedeschi!</p><div class=\"field field-type-filefield field-field-audiofile\">\n    <div class=\"field-items\">\n            <div class=\"field-item odd\">\n                     <enclosure url=\"http://www.sanbaradio.it/files/private/LaGermaniaChiamaSanba01x10.mp3\" length=\"13088509\" type=\"audio/mpeg\" />\n        </div>\n        </div>\n</div>\n<div class=\"field field-type-computed field-field-embed\">\n      <div class=\"field-label\">Puoi embeddare il player utilizzando il codice qui sotto:&nbsp;</div>\n    <div class=\"field-items\">\n            <div class=\"field-item odd\">\n                    <textarea class=\"share-embed-code\"> <iframe width=\"350\" height=\"45\" src=\"http://www.sanbaradio.it/content/la-germania-chiama-sanba-01x10?embedded \"frameborder=\"0\"></iframe></textarea>        </div>\n        </div>\n</div>\n<div class=\"field field-type-filefield field-field-audiopod\">\n    <div class=\"field-items\">\n            <div class=\"field-item odd\">\n                    <div class=\"filefield-file\"><img class=\"filefield-icon field-icon-audio-mpeg\"  alt=\"audio/mpeg icon\" src=\"http://www.sanbaradio.it/modules/filefield/icons/audio-x-generic.png\" /><a href=\"http://www.sanbaradio.it/files/LaGermaniaChiamaSanba01x10.mp3\" type=\"audio/mpeg; length=13088509\">LaGermaniaChiamaSanba01x10.mp3</a></div>        </div>\n        </div>\n</div>\n<p><a href=\"http://www.sanbaradio.it/content/la-germania-chiama-sanba-01x10\" target=\"_blank\">leggi tutto</a></p>",
+          "enclosure": {
+            "length": "13088509",
+            "type": "audio/mpeg",
+            "url": "http://www.sanbaradio.it/files/LaGermaniaChiamaSanba01x10.mp3"
+          },
+          "itunes:author": "Redazione",
+          "itunes:duration": "818",
+          "itunes:explicit": "clean",
+          "itunes:keywords": "La Germania Chiama Sanba",
+          "itunes:subtitle": "01x10 Il Referendum Costituzionale, van der Bellen e le parole italiane in tedesco!",
+          "itunes:summary": "<p>Decima puntata di La Germania chiama Sanba! Oggi abbiamo parlato della reazione tedesca alla vittoria dei NO al Referendum Costituzionale, della vittoria del verde Alexander van der Bellen alle Presidenziali austriache e delle parole italiane usate nei nomi del cibo tedeschi!</p>",
+          "link": "http://www.sanbaradio.it/content/la-germania-chiama-sanba-01x10",
+          "title": "La Germania chiama Sanba 01x10"
+        }
+      ],
+      "language": "it",
+      "link": "http://www.sanbaradio.it/lastpodcasts",
+      "title": "Podcasts"
+    },
+    "version": "2.0",
+    "xml:base": "http://www.sanbaradio.it/lastpodcasts",
+    "xmlns:dc": "http://purl.org/dc/elements/1.1/",
+    "xmlns:itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd",
+    "xmlns:media": "http://search.yahoo.com/mrss/"
+  }
+}
