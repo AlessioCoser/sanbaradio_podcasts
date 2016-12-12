@@ -8,7 +8,7 @@ var folder = 'sanbaradio-podcasts'
 var inputFileName = 'pods-test.json'
 
 describe('S3FileSystem', function () {
-  it('reads from S3 Bucket', function (done) {
+  it('reads from S3 Bucket as stream', function (done) {
     this.timeout(30000)
 
     var inputContent = 'lorem ipsum dolor sit amet.'
@@ -28,7 +28,7 @@ describe('S3FileSystem', function () {
     })
   })
 
-  it('writes to S3 Bucket', function () {
+  it('writes to S3 Bucket as stream', function () {
     this.timeout(10000)
     var s3FileSystem = new S3FileSystem()
     var aStream = stringToStream('Lorem ipsum dolor sot amet.\n')
@@ -39,6 +39,17 @@ describe('S3FileSystem', function () {
     .then(data => {
       let fileContent = (data.Body) ? data.Body.toString() : ''
 
+      assert.equal(fileContent, 'Lorem ipsum dolor sot amet.\n')
+    })
+  })
+
+  it('reads file from S3 Bucket', function () {
+    this.timeout(10000)
+    var s3FileSystem = new S3FileSystem()
+
+    s3FileSystem.read(folder, inputFileName)
+    .then((err, data) => {
+      let fileContent = (data.Body) ? data.Body.toString() : ''
       assert.equal(fileContent, 'Lorem ipsum dolor sot amet.\n')
     })
   })
