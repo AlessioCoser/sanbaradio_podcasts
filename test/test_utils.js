@@ -4,7 +4,10 @@ module.exports = {
   deleteS3Object,
   putS3Object,
   readS3Object,
-  waitUntilS3ObjectExists
+  waitUntilS3ObjectExists,
+  jsonItem,
+  invalidItem,
+  jsonPayload
 }
 
 function deleteS3Object(bucket, key) {
@@ -60,4 +63,38 @@ function waitUntilS3ObjectExists(bucket, key) {
       retries++
     }, 1000)
   })
+}
+
+function jsonItem(name) {
+  return {
+    'itunes:keywords': [`Category`],
+    'itunes:subtitle': [`${name} Title`],
+    'itunes:summary': [`<p>Html Description</p>`],
+    link: [`http://${name}.link`],
+    url: [`http://${name}.url`],
+    pubDate: 'Fri, 09 Dec 2016 14:10:15 +0000',
+    enclosure: [{ '$': {url: `http://${name}.enc`, type: 'audio/mpeg', length: 5000 }}]
+  }
+}
+
+function invalidItem() {
+  return {
+    'itunes:keywords': [`Category`]
+  }
+}
+
+function jsonPayload(items) {
+  if (items === null) {
+    return null
+  }
+
+  if (!Array.isArray(items)) {
+    return {}
+  }
+
+  return {
+    rss: {
+      channel: [{item: items}]
+    }
+  }
 }
