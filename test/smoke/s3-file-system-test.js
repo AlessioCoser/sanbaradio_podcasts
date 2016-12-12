@@ -47,10 +47,21 @@ describe('S3FileSystem', function () {
     this.timeout(10000)
     var s3FileSystem = new S3FileSystem()
 
-    s3FileSystem.read(folder, inputFileName)
-    .then((err, data) => {
+    return s3FileSystem.read(folder, inputFileName)
+    .then(data => {
       let fileContent = (data.Body) ? data.Body.toString() : ''
+
       assert.equal(fileContent, 'Lorem ipsum dolor sot amet.\n')
+    })
+  })
+
+  it('get file head from S3 Bucket', function () {
+    this.timeout(10000)
+    var s3FileSystem = new S3FileSystem()
+
+    return s3FileSystem.head(folder, inputFileName)
+    .then(data => {
+      assert.equal(data.ContentLength, '28')
     })
   })
 })
