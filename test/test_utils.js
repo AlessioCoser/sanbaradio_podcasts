@@ -67,7 +67,7 @@ function waitUntilS3ObjectExists(bucket, key) {
 
 function jsonItem(name) {
   return {
-    'itunes:keywords': [`Category`],
+    'itunes:keywords': [`Channel`],
     'itunes:subtitle': [`${name} Title`],
     'itunes:summary': [`<p>Html Description</p>`],
     link: [`http://${name}.link`],
@@ -79,7 +79,7 @@ function jsonItem(name) {
 
 function invalidItem() {
   return {
-    'itunes:keywords': [`Category`]
+    'itunes:keywords': [`Channel`]
   }
 }
 

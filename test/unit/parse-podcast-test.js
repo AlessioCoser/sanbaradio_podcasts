@@ -10,7 +10,7 @@ describe('parsePodcast', function () {
   it('returns a Podcast json', function() {
     var expectedJson = {
       episode: 'first Title',
-      category: 'Category',
+      channel: 'Channel',
       description: '<p>Html Description</p>',
       date: new Date('Fri, 09 Dec 2016 14:10:15 +0000'),
       file: { url: 'http://first.enc', type: 'audio/mpeg', length: 5000}
